@@ -66,7 +66,6 @@ export const postScream = (newScream) => (dispatch) => {
 // like a scream
 export const likeScream = (screamId) => (dispatch) => {
     axios.get(`/article/${screamId}/like`).then((res) => {
-        console.log(res.data);
             dispatch({ 
                 type: LIKE_SCREAM,
                 payload: res.data
@@ -78,7 +77,6 @@ export const likeScream = (screamId) => (dispatch) => {
 // unlike a scream
 export const unlikeScream = (screamId) => (dispatch) => {
     axios.get(`/article/${screamId}/unlike`).then((res) => {
-        console.log(res.data);
             dispatch({ 
                 type: UNLIKE_SCREAM,
                 payload: res.data
