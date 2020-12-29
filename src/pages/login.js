@@ -80,7 +80,7 @@ class login extends Component {
     Login
     </Typography>
     
-    <form novalidate onSubmit={this.handleSubmit} >
+    <form noValidate onSubmit={this.handleSubmit} >
 
     <TextField 
     id ="email" 
