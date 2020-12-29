@@ -32,7 +32,7 @@ import AuthRoute from './util/AuthRoute.js';
 
 const theme = createMuiTheme(themeObject)
 
-axios.default.baseURL = 'https://us-central1-socialapp-941d0.cloudfunctions.net/api/v1';
+axios.defaults.baseURL = 'https://us-central1-socialapp-941d0.cloudfunctions.net/api/v1';
 const token = localStorage.FBIdToken;
 
 if(token) {
